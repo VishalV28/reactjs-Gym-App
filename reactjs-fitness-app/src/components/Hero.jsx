@@ -8,4 +8,4 @@ export default function Hero() {
         <p>djahfhuiohosslnd<span>abiiuwhh</span> dklsskksa<span>sjdkjsijj</span> cslnnnslnlnlns</p>
     </div>
   )
-}
+} //c
