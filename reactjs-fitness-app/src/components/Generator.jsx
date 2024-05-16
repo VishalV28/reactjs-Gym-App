@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import SectionWrapper from './SectionWrapper'
 import { WORKOUTS, SCHEMES } from '../utils/workoutData'
+import Button from './Button'
 
 function Header(props) {
   const { index, title, description } = props
@@ -17,10 +18,9 @@ function Header(props) {
 
 export default function Generator(props) {
 
+  const { split, setSplit, muscles, setMuscles, goal, setGoal, updateWorkout } = props
   const [showModal, setShowModal] = useState(false)
-  const [split, setSplit] = useState('individual')
-  const [muscles, setMuscles] = useState ([])
-  const [goal, setGoal] = useState('strength_power')
+
 
   function toggleModal() {
     setShowModal(!showModal)
@@ -95,6 +95,7 @@ export default function Generator(props) {
                     )
                 })}
             </div>
+            <Button text={"Formulate Workout"} func={updateWorkout}/>
     </SectionWrapper>
   )
 }
