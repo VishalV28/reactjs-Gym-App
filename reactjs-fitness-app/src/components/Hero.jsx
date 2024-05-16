@@ -11,9 +11,9 @@ export default function Hero() {
       <p className='text-sm md:text-base font-light'> djahfhuiohosslnd <span className='text-blue-400 font-medium'>abiiuwhh</span> dklsskksa 
       <span className='text-blue-400 font-medium'>sjdkjsijj</span> cslnnnslnlnlns</p>
       <Button 
-      // func={() => {
-      //            window.location.href = '#generate'
-      //       }} 
+      func={() => {
+                 window.location.href = '#generate'
+            }} 
       text={"Accept & Begin"}>
       </Button>
     </div>
